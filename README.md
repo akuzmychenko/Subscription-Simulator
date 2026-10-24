@@ -4,6 +4,14 @@ A compact R/Shiny application that creates reproducible source data for a fictio
 
 **R · Shiny · Synthetic data · Reproducibility**
 
+## Project preview
+
+![Shiny data generator showing seed and audience settings, validated output counts and dataset ZIP download](media/generator-overview.png)
+
+A successfully generated **v2 scenario with 4,906 users**, using seed `20261023` and the 4,800-5,000 audience range. The screen shows validation status and the downloadable ZIP handoff to the analyzer.
+
+This generator example differs from the analyzer's preserved **4,890-user presentation case**, which was created with generator v1. The same seed does not imply identical output across generator versions.
+
 ## Run
 
 With Docker Desktop running, open a terminal in this folder:
@@ -106,9 +114,11 @@ classDiagram
 | `setup.R`, `start.R` | Dependency installation and local launch |
 | `Dockerfile`, `compose.yaml` | Container launch |
 | `check.R` | Repeatable generation and contract checks |
+| `media/` | Screenshot of a successfully generated scenario |
 
 ## Verification
 
-Run `Rscript check.R` after setup. Generation, reproducibility, range handling, source export, server-side interface actions, HTTP startup and analyzer handoff were executed in Linux R 4.3.3. The Docker image was not built in the preparation environment; verify the container on your machine. Dependency checks run in a fresh R process to avoid preloaded-version conflicts.
+Run `Rscript check.R` after setup. Generation, reproducibility, range handling, source export, server-side interface actions, HTTP startup and analyzer handoff were executed in Linux R 4.3.3. Dependency checks run in a fresh R process to avoid preloaded-version conflicts.
+
 
 
