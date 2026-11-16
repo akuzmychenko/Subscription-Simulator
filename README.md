@@ -24,7 +24,7 @@ docker compose up --build
 The terminal normally opens in the repository root, where `compose.yaml` is located.
 
 3. Wait until the terminal displays `Listening on http://0.0.0.0:3838`.
-4. Open **Ports** next to **Terminal** in the bottom panel and click **Open in Browser** for port **3838**. If the port is missing, select **Forward a Port** and enter `3838`.
+4. [Click this link to open the generator](http://localhost:3838). Alternatively, open **Ports** next to **Terminal** in the bottom panel and click **Open in Browser** for port **3838**. If the port is missing, select **Forward a Port** and enter `3838`.
 
 No local R or Docker Desktop installation is required. Keep the terminal running while using the application. Stop with Ctrl+C.
 
