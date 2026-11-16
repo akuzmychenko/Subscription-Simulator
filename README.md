@@ -12,28 +12,31 @@ A successfully generated **v2 scenario with 4,906 users**, using seed `20261023`
 
 This generator example differs from the analyzer's preserved **4,890-user presentation case**, which was created with generator v1. The same seed does not imply identical output across generator versions.
 
-## Run the generator
+## Run in GitHub Codespaces
 
-Run locally with Docker installed and running, or use GitHub Codespaces.
-
-Open a terminal in the project's root folder (the folder containing `compose.yaml`) and enter:
+1. On the repository page, select **Code → Codespaces → Create codespace on main**.
+2. Open **Terminal → New Terminal** and enter:
 
 ```bash
 docker compose up --build
 ```
 
-Wait until the terminal displays `Listening on http://0.0.0.0:3838`.
+The terminal normally opens in the repository root, where `compose.yaml` is located.
 
-- **Locally:** click [Open the generator](http://localhost:3838).
-- **GitHub Codespaces:** open **Ports** next to **Terminal** in the bottom panel, find port **3838**, and click **Open in Browser**. If the port is missing, select **Forward a Port** and enter `3838`.
+3. Wait until the terminal displays `Listening on http://0.0.0.0:3838`.
+4. Open **Ports** next to **Terminal** in the bottom panel and click **Open in Browser** for port **3838**. If the port is missing, select **Forward a Port** and enter `3838`.
 
-Keep the terminal running while using the application. Stop with Ctrl+C.
+No local R or Docker Desktop installation is required. Keep the terminal running while using the application. Stop with Ctrl+C.
 
-For subsequent starts, enter:
+### Optional: run locally
+
+With Docker installed and running, open a terminal in the project folder containing `compose.yaml` and enter:
 
 ```bash
-docker compose up
+docker compose up --build
 ```
+
+Once the application is ready, click http://localhost:3838 or enter this address in your browser.
 
 ## Generate → download → analyze
 
